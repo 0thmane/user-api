@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:h2:mem:assessment_test_db
+    username: assessment_test_user
+    password: assessment_test_password
+    driverClassName: org.h2.Driver
+  jpa:
+    spring.jpa.database-platform: org.hibernate.dialect.H2Dialect
+    defer-datasource-initialization: true
+  h2:
+    console.enabled: true
+  jackson:
+    mapper:
+      accept-case-insensitive-enums: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
